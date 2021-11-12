@@ -40,4 +40,14 @@ jugador2.goto(-200, -60)
 jugador2.pendown()
 jugador2.showturtle()
 
+dado = (1, 2, 3, 4, 5, 6)
+
+for i in range(20) :
+    if jugador1.pos() == (200, 100) :
+        print("la tortuga roja ha ganado")
+        break
+    elif jugador2.pos() == (200, -100) :
+        print("la tortuga azul ha ganado")
+        break
+
 turtle.done()
